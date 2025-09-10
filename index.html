@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Random Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Quiz Random Pro</h1>
+
+  <label for="category">Pilih Kategori:</label>
+  <select id="category">
+    <option value="">Acak</option>
+    <option value="9">Umum</option>
+    <option value="17">Sains & Alam</option>
+    <option value="22">Geografi</option>
+    <option value="23">Sejarah</option>
+    <option value="11">Film & Hiburan</option>
+  </select>
+  <button onclick="startQuiz()">Mulai Quiz</button>
+
+  <div id="quiz-container" style="display:none;">
+    <div id="timer">Waktu tersisa: <span id="time">20</span> detik</div>
+    <div id="question"></div>
+    <div id="answers"></div>
+    <button id="next-btn" onclick="loadQuestion()">Next</button>
+  </div>
+
+  <div id="score-container" style="display:none;">
+    <h2>Skor Anda: <span id="score">0</span></h2>
+    <button onclick="resetQuiz()">Reset Quiz</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+      </html>
